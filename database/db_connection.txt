@@ -2,3 +2,7 @@
 # Python: sqlite3.connect('myapp.db')
 # Connection string: sqlite:////home/kavia/workspace/code-generation/simple-to-do-list-297134-297144/database/myapp.db
 # File path: /home/kavia/workspace/code-generation/simple-to-do-list-297134-297144/database/myapp.db
+# Usage notes:
+# - Always enable foreign keys after connecting: cursor.execute("PRAGMA foreign_keys = ON")
+# - updated_at on todos is maintained by trigger 'trg_todos_updated_at'
+# - Example CLI query: sqlite3 myapp.db "SELECT * FROM todos;"
